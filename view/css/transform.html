@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            transition: width 5s;
+        }
+        
+        .a {
+            transform: rotate(20deg);
+        }
+        
+        .b {
+            transform: scaleY(1.5);
+        }
+        
+        div:hover {
+            width: 300px;
+        }
+        
+        .c {
+            transition-timing-function: linear;
+        }
+        
+        .d {
+            transition-timing-function: ease;
+        }
+        
+        .e {
+            transition-timing-function: ease-in;
+        }
+        
+        .f {
+            transition-timing-function: ease-out;
+        }
+        
+        .g {
+            transition-timing-function: cubic-bezier (.07, 1.12, .65, .05);
+            ;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="a">Algun texto</div>
+    <div class="b">Algun texto</div>
+
+    <br>
+
+    <div class="c">linear</div>
+    <div class="d">ease</div>
+    <div class="e">ease-in</div>
+    <div class="f">ease-out</div>
+    <div class="g">ease-in-out</div>
+
+</body>
+
+</html>
